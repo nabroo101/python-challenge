@@ -21,3 +21,26 @@ print('------------------------')
 
 number_votes=len(data_csv_list)
 print(f'Total Votes: {number_votes}')
+#=======================================================================================================
+
+#creating an empty dic
+candidate_with_votes = {}
+for i in data_csv_list:
+    candidate = i[2]
+    if candidate in candidate_with_votes:
+        candidate_with_votes[candidate] += 1
+    else:
+        candidate_with_votes[candidate] = 1
+
+for candidate, votes in candidate_with_votes.items():
+    vote_percentage = votes / number_votes * 100
+    print(f'{candidate}: {vote_percentage:.3f}% ({votes})')
+
+winner =''
+max_votes = 0
+for candidate, votes in candidate_with_votes.items(): 
+       if votes > max_votes:
+        max_votes = votes
+        winner = candidate
+       
+print(f'Winner: {winner}')

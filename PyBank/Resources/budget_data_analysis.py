@@ -56,7 +56,7 @@ print(f'Average Change: ${rounded_average_change}')
 #we use the max modual to calculate the value from the monthly_changes list that we previously created
 greatest_increase_value = max(monthly_changes)
 greatest_decrease_value = min(monthly_changes)
-#because the monthly_changes index starts from the second index , we need to add one to the index
+#because the monthly_changes index starts from the 0 index , we need to add one to the index
 greatest_increase_date_index = monthly_changes.index(greatest_increase_value)+1
 greatest_decrease_date_index = monthly_changes.index(greatest_decrease_value)+1
 #we go back to the original list so we can retrive the date from the index we just got for both min and max

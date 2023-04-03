@@ -21,6 +21,8 @@ print('------------------------')
 
 number_votes=len(data_csv_list)
 print(f'Total Votes: {number_votes}')
+print('----------------------')
+
 #=======================================================================================================
 
 #creating an empty dic
@@ -39,8 +41,10 @@ for candidate, votes in candidate_with_votes.items():
 winner =''
 max_votes = 0
 for candidate, votes in candidate_with_votes.items(): 
-       if votes > max_votes:
+    if votes > max_votes:
         max_votes = votes
         winner = candidate
-       
+print('-------------------------')       
 print(f'Winner: {winner}')
+print('-------------------------')
+#with open('C:\\Users\\Lenovo\\unc\\homework\\python-challenge\\PyPoll\\analysis\\output.txt', 'w') as file: 

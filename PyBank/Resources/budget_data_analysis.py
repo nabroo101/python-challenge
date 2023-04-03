@@ -50,8 +50,15 @@ for i in range(1, len(rows)):
 average_monthly_change = sum(monthly_changes) / (total_number_of_months - 1)
 rounded_average_change = round(average_monthly_change, 2)
 print(f'Average Change: ${rounded_average_change}')
+#===================================================================
 
+# the comprehension version of the for loop
+# monthly_changes = [int(rows[i][1]) - int(rows[i-1][1]) for i in range(1, len(rows))]
+# average_monthly_change = sum(monthly_changes) / (len(rows) - 1)
+# rounded_average_change = round(average_monthly_change, 2)
+# print(f'Average Change: ${rounded_average_change}')
 #==================================================================
+
 #The greatest increase in profits (date and amount) over the entire period
 #we use the max modual to calculate the value from the monthly_changes list that we previously created
 greatest_increase_value = max(monthly_changes)

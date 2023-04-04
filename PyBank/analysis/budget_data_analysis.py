@@ -73,9 +73,11 @@ min_date = rows[greatest_decrease_date_index]
 print(f'Greatest Increase in Profits: {max_date[0]} (${greatest_increase_value})')
 print(f'Greatest Decrease in Profits: {min_date[0]} (${greatest_decrease_value})')
 
-with open('C:\\Users\\Lenovo\\unc\\homework\\python-challenge\\PyBank\\Resources\\output.txt', 'w') as file:    
+with open('C:\\Users\\Lenovo\\unc\\homework\\python-challenge\\PyBank\\analysis\\output.txt', 'w') as file:    
     file.write('Financial Analysis\n')
+   
     file.write('----------------------------\n')
+   
     file.write(f'Total Months: {total_number_of_months}\n')
     file.write(f'Total: ${total_net}\n')
     file.write(f'Average Change: ${rounded_average_change}\n')

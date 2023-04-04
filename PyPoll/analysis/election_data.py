@@ -34,9 +34,10 @@ for i in data_csv_list:
     else:
         candidate_with_votes[candidate] = 1
 
+
 for candidate, votes in candidate_with_votes.items():
     vote_percentage = votes / number_votes * 100
-    print(f'{candidate}: {vote_percentage:.3f}% ({votes})')
+print(f'{candidate}: {vote_percentage:.3f}% ({votes})')
 
 winner =''
 max_votes = 0

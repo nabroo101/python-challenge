@@ -4,7 +4,7 @@ print('Financial Analysis')
 print('----------------------------')
 total_net = 0
 # assigning the file path to a variable
-budget_csv_path = os.path.join('.', 'budget_data.csv')
+budget_csv_path = os.path.join('..', 'Resources', 'budget_data.csv')
 
 
 with open(budget_csv_path, 'r', encoding="utf-8") as csv_file:
